@@ -4,12 +4,12 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class DidiokController {
 
-    @Value("${game.name}")
+public class MyController {
+    @Value("${my.name}")
     private  String name;
-    @Value("${game.user}")
-    private  String user;
+    @Value("${my.boss}")
+    private  String boss;
 
     public String getName() {
         return name;
@@ -19,11 +19,11 @@ public class DidiokController {
         this.name = name;
     }
 
-    public String getUser() {
-        return user;
+    public String getBoss() {
+        return boss;
     }
 
-    public void setUser(String user) {
-        this.user = user;
+    public void setBoss(String boss) {
+        this.boss = boss;
     }
 }

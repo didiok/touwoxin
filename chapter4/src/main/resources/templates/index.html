@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>thymeleaf</title>
+    <!-- 可以在/resources/static/js目录下创建一个hello.js ，然后使用如下语法依赖即可，本教程没有该js文件-->
+    <script type="text/javascript" th:src="@{/js/hello.js}"></script>
+</head>
+<body>
+<h1 th:text="${h1}">thymeleaf渲染前</h1>
+<h2>以下内容是“渲染前的静态效果”还是“渲染后的动态效果”</h2>
+<p th:text="${msg}">静态效果</p>
+</body>
+</html>
